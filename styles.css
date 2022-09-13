@@ -196,7 +196,7 @@ a span {
     display: inline-block;
 }
 
-#links {
+.links {
     padding: 0 10px;
     border-radius: 10px;
 }
