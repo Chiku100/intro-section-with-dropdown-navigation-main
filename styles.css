@@ -107,8 +107,9 @@ button:hover {
     background-color: var(--Almost_white);
 }
 
-.mv-logo {
-    margin: 2rem 1rem;
+.mv-logo {position:absolute;
+    top: 0;
+    margin:2rem 1rem;
     display: none;
 }
 
@@ -200,7 +201,7 @@ a span {
     border-radius: 10px;
 }
 
-.icon {
+.icon {margin:0 1rem;
     font-size: 30px;
     right: 0;
     position: absolute;
