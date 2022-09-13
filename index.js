@@ -1,4 +1,4 @@
-let links = document.querySelectorAll("#links");
+let links = document.querySelectorAll(".links");
 for (let i = 0; i < links.length; i++) {
     $(links[i]).hover(function () {
         $(links[i]).css("color", "red");
