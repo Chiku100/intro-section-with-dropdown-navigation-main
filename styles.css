@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --Almost_white: hsl(0, 0%, 98%);
+    --Medium_Gray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Almost_white);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    padding: 0 5rem;
+    display: flex;
+    gap: 6rem;
+    width: 90%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    display: block;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    margin-right: 600px;
+}
+
+.hero {
+    width: 90%;
+}
+
+.left-box {
+    margin-right: 2rem;
+    width: 100%;
+}
+
+.right-box {
+    margin-right: -5rem;
+}
+
+.left-box p {
+    color: var(--Medium_Gray);
+    width: 80%;
+}
+
+.left-box button {
+    margin-top: 2rem;
+    background-color: var(--AlmostBlack);
+    color: var(--Almost_white);
+    width: 10rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px;
+    color: var(--Medium_Gray);
+    border: 2px solid var(--Medium_Gray);
+    width: 6rem;
+    background-color: var(--Almost_white);
+    border-radius: 15px;
+}
+
+.register {
+    place-items: center;
+    display: flex;
+
+    margin: 0 2rem 1rem 0;
+}
+
+button:hover {
+    color: var(--AlmostBlack);
+    background-color: var(--Almost_white);
+}
+
+.mv-logo {
+    margin: 2rem 1rem;
+    display: none;
+}
+
+.logo img {
+    margin: 10px 0;
+}
+
+a {
+    color: var(--Medium_Gray);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+li:hover {
+    font-weight: 700;
+}
+
+span img {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.clients {
+    margin-top: 6rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+li p {
+    font-size: 15px;
+    color: var(--Medium_Gray);
+}
+
+.drop-down1 {
+
+    position: absolute;
+    min-width: 140px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    line-height: 2rem;
+    display: flex;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--Almost_white);
+    border-radius: 10px;
+}
+
+.drop-down2 {
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Almost_white);
+    border-radius: 10px;
+}
+
+.viz {
+    display: none;
+}
+
+a span {
+    margin-right: 10px;
+}
+
+.features {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.company {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+#links {
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 30px;
+    right: 0;
+    position: absolute;
+
+}
+
+.close {
+    width: 10%;
+    display: none;
+    position: relative;
+    left: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul li,
+    li button {
+        display: none;
+    }
+
+    .img_logo {
+        display: none;
+    }
+
+    .mv-logo {
+        display: block;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        right: 0;
+        padding: 1rem;
+        top: 0;
+        justify-content: flex-start;
+        width: 60%;
+        text-align: left;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .login {
+        text-align: center;
+    }
+
+    .about {
+        margin-right: 0;
+    }
+
+    .register {
+        text-align: center;
+    }
+
+    .register button {
+        width: 100%;
+    }
+
+    .drop-down1 {
+        box-shadow: none;
+        position: relative;
+        background-color: var(--Almost_white);
+    }
+
+    .drop-down2 {
+        position: relative;
+        box-shadow: none;
+    }
+
+    body {
+        max-width: 375px;
+    }
+
+    main {
+        text-align: center;
+        padding: 1rem;
+        gap: 0;
+        font-size: 15px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .left-box {
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-box {
+        background: url("./images/image-hero-mobile.png");
+        margin-right: 0;
+        background-size: 100%;
+        width: 100%;
+        min-height: 16rem;
+    }
+
+    .left-box p {
+        width: 100%;
+    }
+
+    .left-box button {
+        width: 8rem;
+    }
+
+    .register {
+        margin: 0;
+    }
+
+    .logo img {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .clients {
+        margin-top: 3rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clients img {
+        width: 20%;
+    }
+
+    .hero {
+        display: none;
+    }
+}
